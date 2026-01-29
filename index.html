@@ -1,0 +1,1527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dipak Meher | PhD Student, Knowledge Graphs & LLMs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
+  <style>
+    html,
+    body {
+      height: auto;
+    }
+
+    body {
+      overflow-y: auto;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar for scrollable sections */
+    .nice-scrollbar::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .nice-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .nice-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(24, 24, 27, 0.18);
+      border-radius: 999px;
+      border: 3px solid transparent;
+      background-clip: content-box;
+    }
+
+    .nice-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(24, 24, 27, 0.28);
+      background-clip: content-box;
+    }
+
+
+    .skill-pill {
+      border: 1px solid #e4e4e7;
+      background-color: #fafafa;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #3f3f46;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-50 text-zinc-900">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div>
+        <div class="font-semibold">Dipak Meher</div>
+        <div class="text-xs text-zinc-600">PhD Student · GMU</div>
+      </div>
+
+      <nav class="hidden md:flex gap-5 text-sm">
+        <a href="#about">About</a>
+        <a href="#news" class="hover:underline">News</a>
+        <a href="#experience" class="hover:underline">Research</a>
+        <a href="#publications" class="hover:underline">Publications</a>
+        <a href="#work" class="hover:underline">Work Experience</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#education" class="hover:underline">Education</a>
+        <a href="#skills" class="hover:underline">Technical Skills</a>
+        <a href="#engagement" class="hover:underline">Invited Talks</a>
+        <a href="#engagement" class="hover:underline">Extracurricular</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+
+      <!-- <a href="assets/Dipak_Meher_Resume.pdf" download
+       class="text-sm bg-zinc-900 text-white px-3 py-2 rounded-lg">
+       Download CV
+    </a>
+  
+  -->
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-start" id="about">
+    <!-- LEFT COLUMN -->
+    <div>
+      <h1 class="text-4xl font-semibold">Dipak Meher</h1>
+
+      <p class="mt-2 text-lg text-zinc-700">
+        PhD Student in Computer Science <br />
+        George Mason University
+      </p>
+
+      <p class="mt-5 text-sm text-zinc-600 max-w-xl leading-relaxed">
+        PhD student researching the intersection of <span class="font-semibold text-zinc-800">machine learning</span>,
+        <span class="font-semibold text-zinc-800">knowledge graphs</span>, <span
+          class="font-semibold text-zinc-800">NLP</span>,
+        <span class="font-semibold text-zinc-800">large language models (LLMs)</span>, and
+        <span class="font-semibold text-zinc-800">graph-based retrieval-augmented generation (RAG)</span>.
+        Experienced in building end-to-end ML pipelines with <span class="font-semibold text-zinc-800">PyTorch</span>,
+        <span class="font-semibold text-zinc-800">TensorFlow</span>, and <span
+          class="font-semibold text-zinc-800">Hugging Face</span>,
+        with <span class="font-semibold text-zinc-800">2 years</span> of prior industry experience.
+        Publications at <span class="font-semibold text-zinc-800">KDD, ICDM, ICKG, SDM,</span> and <span
+          class="font-semibold text-zinc-800">IJCNN</span>,
+        focusing on robust knowledge graph construction and cross-domain recommendation.
+        <span class="font-semibold text-zinc-900">Seeking Summer 2026 internships.</span>
+      </p>
+
+      <div class="mt-6 flex gap-3">
+        <a href="assets/Dipak_Meher_ResumeA.pdf" download class="bg-zinc-900 text-white px-4 py-2 rounded-lg">
+          Download Resume
+        </a>
+        <a href="#experience" class="border border-zinc-300 px-4 py-2 rounded-lg">
+          Learn More
+        </a>
+      </div>
+
+      <div class="mt-6 flex gap-4 text-sm text-zinc-600 leading-tight">
+        <a href="https://www.linkedin.com/in/dipakmeher/" class="flex items-center gap-1 hover:text-zinc-900">🔗
+          LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=jWSz_LvtslcC&hl=en"
+          class="flex items-center gap-1 hover:text-zinc-900">💻 GitHub</a>
+        <a href="https://github.com/dipakmeher" class="flex items-center gap-1 hover:text-zinc-900">📚 Scholar</a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN (PHOTO) -->
+    <div class="flex justify-center md:justify-end">
+      <div class="bg-white border rounded-2xl px-5 pt-5 pb-5 w-72 text-center">
+        <img src="assets/d.jpg" alt="Dipak Meher"
+          class="block h-60 w-full object-cover rounded-xl border border-zinc-200" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <!-- <section id="about" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-semibold">What I’m Doing Now</h2>
+  <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+    <li>• Graduate Research Assistant at GMU under Prof. Carlotta Domeniconi</li>
+    <li>• Designing LLM-based knowledge graph construction pipelines (LINK-KG, CORE-KG)</li>
+    <li>• Studying evaluation, robustness, and long-context reasoning in LLMs</li>
+    <li>• Seeking Summer 2026 research internships</li>
+  </ul>
+</section> -->
+
+  <!-- NEWS -->
+  <section id="news" class="max-w-6xl mx-auto px-4 py-25">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl font-semibold">Latest News</h2>
+      <p class="text-xs text-zinc-500">Scroll to view more</p>
+    </div>
+
+    <div class="mt-4 rounded-2xl border border-zinc-200 bg-white shadow-sm">
+      <!-- Scroll container -->
+      <div class="relative">
+        <div class="h-64 overflow-y-auto p-4 pr-3 nice-scrollbar">
+          <ul class="space-y-3 text-sm text-zinc-700">
+            <li class="rounded-xl border border-zinc-100 bg-zinc-50 p-3">
+              <div class="text-xs text-zinc-500">Nov 2025</div>
+              <div class="font-medium">LINK-KG accepted at ICKG 2025 (IEEE)</div>
+            </li>
+
+            <li class="rounded-xl border border-zinc-100 bg-zinc-50 p-3">
+              <div class="text-xs text-zinc-500">Aug 2025</div>
+              <div class="font-medium">CORE-KG accepted at KDD 2025 Workshop (SKnow-LLM)</div>
+            </li>
+
+            <li class="rounded-xl border border-zinc-100 bg-zinc-50 p-3">
+              <div class="text-xs text-zinc-500">2024</div>
+              <div class="font-medium">Invited talk: GraphRAG for Query-Focused Summarization (GMU)</div>
+            </li>
+
+            <!-- Add more items here -->
+            <li class="rounded-xl border border-zinc-100 bg-zinc-50 p-3">
+              <div class="text-xs text-zinc-500">2024</div>
+              <div class="font-medium">Invited talk: Mitigating Temporal Degradation in Entity Linking (GMU)</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subtle bottom fade to hint scrolling -->
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Research Experience</h2>
+        <!-- <p class="mt-2 text-sm text-zinc-600">
+          LLM-driven Knowledge Graphs, GraphRAG, Coreference Resolution, Cross-domain Recommendation
+        </p> -->
+      </div>
+      <a href="#publications" class="text-sm font-medium text-zinc-900 hover:underline">
+        View Publications →
+      </a>
+    </div>
+
+    <!-- Timeline wrapper -->
+    <div class="mt-10 grid gap-10">
+      <!-- GMU - Domeniconi -->
+      <article class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-4 top-0 hidden h-full w-px bg-zinc-200 md:block"></div>
+
+        <div class="grid gap-6 md:grid-cols-[2.2rem_1fr]">
+          <!-- Timeline dot -->
+          <div class="hidden md:flex items-start justify-center">
+            <div class="mt-2 h-3 w-3 rounded-full bg-zinc-900 ring-4 ring-white"></div>
+          </div>
+
+          <div class="rounded-3xl border border-zinc-200 bg-white shadow-sm">
+            <div class="p-6 md:p-7">
+              <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 class="text-lg font-semibold">Graduate Research Assistant, George Mason University</h3>
+                  <p class="mt-1 text-sm text-zinc-600">
+                    Advisor: Prof. Carlotta Domeniconi
+                  </p>
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-1">
+                  <span
+                    class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                    Aug 2024 – Aug 2025
+                  </span>
+                  <span class="text-xs text-zinc-500">Fairfax, VA</span>
+                </div>
+              </div>
+
+              <div class="mt-6 grid gap-4">
+                <!-- LINK-KG -->
+                <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-3">
+                    <h4 class="font-semibold">LINK-KG</h4>
+                    <span
+                      class="inline-flex rounded-full bg-white px-2.5 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">
+                      Knowledge graph construction (short + long docs)
+                    </span>
+                  </div>
+
+                  <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Designed an LLM-based pipeline for knowledge graph construction from complex legal narratives,
+                      addressing long-range coreference, entity disambiguation, and reference normalization.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Developed a three-stage coreference system using a type-specific prompt cache to resolve plural
+                      mentions, role shifts, and alias ambiguity, mitigating context-window limitations and
+                      loss-in-the-middle issues in LLMs.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Achieved a <b>45.21%</b> reduction in node duplication and <b>32.22%</b> decrease in legal noise
+                      over GraphRAG and CORE-KG.
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- CORE-KG -->
+                <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-3">
+                    <h4 class="font-semibold">CORE-KG</h4>
+                    <span
+                      class="inline-flex rounded-full bg-white px-2.5 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">
+                      Human smuggling network analysis
+                    </span>
+                  </div>
+
+                  <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Developed a modular LLM-driven framework integrating type-aware coreference resolution and
+                      domain-specific prompting to construct coherent knowledge graphs from human smuggling legal cases.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Introduced sequential entity extraction and legal-specific filtering to reduce attention drift,
+                      suppress procedural noise, and improve entity-type accuracy in graph construction.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Achieved a <b>33.28%</b> reduction in node duplication and <b>38.37%</b> reduction in legal noise
+                      over GraphRAG.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- skills/tags -->
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">LLMs</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Knowledge
+                  Graphs</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Coreference</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">GraphRAG</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Legal
+                  NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- GMU - Rosenblum -->
+      <article class="relative">
+        <div class="absolute left-4 top-0 hidden h-full w-px bg-zinc-200 md:block"></div>
+
+        <div class="grid gap-6 md:grid-cols-[2.2rem_1fr]">
+          <div class="hidden md:flex items-start justify-center">
+            <div class="mt-2 h-3 w-3 rounded-full bg-zinc-900 ring-4 ring-white"></div>
+          </div>
+
+          <div class="rounded-3xl border border-zinc-200 bg-white shadow-sm">
+            <div class="p-6 md:p-7">
+              <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 class="text-lg font-semibold">Graduate Research Assistant, George Mason University</h3>
+                  <p class="mt-1 text-sm text-zinc-600">
+                    Advisor: Prof. David Rosenblum
+                  </p>
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-1">
+                  <span
+                    class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                    May 2023 – Aug 2024
+                  </span>
+                  <span class="text-xs text-zinc-500">Fairfax, VA</span>
+                </div>
+              </div>
+
+              <div class="mt-6 grid gap-4">
+                <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                  <h4 class="font-semibold">Quantifying Cross-Domain User Behavior Consistency with LLMs</h4>
+                  <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Proposed the first LLM-based framework to quantify user behavior consistency across domains via
+                      item feature extraction, sentiment analysis, and behavior alignment.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                      <span class="min-w-0 leading-relaxed">
+                        Conducted an empirical study across <span class="font-semibold">12 domain pairs</span> and
+                        <span class="font-semibold">4</span> state-of-the-art CDR models, showing current methods
+                        underutilize
+                        behavior consistency.
+                      </span>
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                      <span class="min-w-0 leading-relaxed">
+                        Observed strong consistency in similar domains (Books–Movies:
+                        <span class="font-semibold">0.87</span>) and lower consistency in dissimilar
+                        domains (Electronics–Food:
+                        <span class="font-semibold">0.23</span>).
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                  <h4 class="font-semibold">LLMs for Transfer Learning in Recommender Systems</h4>
+                  <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Co-authored an LLM-driven framework for cross-domain recommendation, improving personalization in
+                      sparse-data cold-start and warm-start scenarios.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Benchmarked six baselines (TGT, CMF, EMCDR, PTUPCDR + DisenCDR, UniCDR) and evaluated prompt
+                      strategies with/without target-domain examples.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                  <h4 class="font-semibold">Vietoris-Rips Complex for Cross-Domain Cold-Start Recommendation</h4>
+                  <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Implemented and benchmarked baseline models (TGT, CMF, EMCDR, PTUPCDR) for cross-domain
+                      recommendation (SDM 2024).
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Developed VRCDR using Vietoris–Rips Complex and Area-based Triangulated Embedding (ATE) to model
+                      users’ niche source-domain preferences as geometric structures.
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                      Achieved up to <b>20%</b> improvement over SOTA methods under extreme cold-start conditions.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Recommender
+                  Systems</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Transfer
+                  Learning</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">LLM
+                  Prompting</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Cross-domain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- IIT Kharagpur -->
+      <article class="relative">
+        <div class="absolute left-4 top-0 hidden h-full w-px bg-zinc-200 md:block"></div>
+
+        <div class="grid gap-6 md:grid-cols-[2.2rem_1fr]">
+          <div class="hidden md:flex items-start justify-center">
+            <div class="mt-2 h-3 w-3 rounded-full bg-zinc-900 ring-4 ring-white"></div>
+          </div>
+
+          <div class="rounded-3xl border border-zinc-200 bg-white shadow-sm">
+            <div class="p-6 md:p-7">
+              <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 class="text-lg font-semibold">Research Intern, Indian Institute of Technology, Kharagpur</h3>
+                  <p class="mt-1 text-sm text-zinc-600">Advisor: Prof. Pawan Goyal</p>
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-1">
+                  <span
+                    class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                    May 2019 – Jun 2019
+                  </span>
+                  <span class="text-xs text-zinc-500">Kharagpur, India</span>
+                </div>
+              </div>
+
+              <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                  Developed an apparel classifier using deep learning on the 800K-image DeepFashion dataset.
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400"></span>
+                  Improved model robustness via data augmentation and hyperparameter tuning, achieving <b>89%</b>
+                  accuracy.
+                </li>
+              </ul>
+
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Deep
+                  Learning</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Computer
+                  Vision</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">DeepFashion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <section id="publications" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Publications</h2>
+        <!-- <p class="mt-2 text-sm text-zinc-600">Selected papers and manuscripts</p> -->
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-5">
+      <!-- 1) LINK-KG — ICKG 2025 -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="text-zinc-600">Published</span>
+          </div>
+
+          <span
+            class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+            Conference Paper
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          <span class="font-semibold">Dipak Meher</span>, C. Domeniconi, G. Correa-Cabrera
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “LINK-KG: LLM-Driven Coreference-Resolved Knowledge Graphs for Human Smuggling Networks”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">ICKG 2025 (IEEE)</span>
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">2025</span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+
+        <!-- <p class="mt-3 text-xs text-zinc-500">
+          Limassol, Cyprus · Nov 13–14, 2025
+        </p> -->
+      </article>
+
+      <!-- 2) ICDM PhD Forum -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="text-zinc-600">Published</span>
+          </div>
+
+          <span
+            class="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">
+            PhD Forum
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          <span class="font-semibold">Dipak Meher</span>, C. Domeniconi
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “Inside CORE-KG: Evaluating Structured Prompting and Coreference Resolution for Knowledge Graphs”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">ICDM 2025 (IEEE) · PhD
+            Forum</span>
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">2025</span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+
+        <!-- <p class="mt-3 text-xs text-zinc-500">
+          Washington DC, USA · Nov 12–15, 2025
+        </p> -->
+      </article>
+
+      <!-- 3) CORE-KG — KDD workshop -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="text-zinc-600">Published</span>
+          </div>
+
+          <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700">
+            Workshop Paper
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          <span class="font-semibold">Dipak Meher</span>, C. Domeniconi, G. Correa-Cabrera
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “CORE-KG: An LLM-Driven Knowledge Graph Construction Framework for Human Smuggling Networks”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">KDD 2025 (ACM) · SKnow-LLM
+            Workshop</span>
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">2025</span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+
+        <!-- <p class="mt-3 text-xs text-zinc-500">
+          Toronto, Canada
+        </p> -->
+      </article>
+
+      <!-- 4) IJCNN 2025 -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="text-zinc-600">Published</span>
+          </div>
+
+          <span class="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800">
+            Conference Paper
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          <span class="font-semibold">Dipak Meher</span>, A. Krishna Vajjala, D. Rosenblum
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “Understanding User Behavior in Cross-Domain Recommendation: An LLM-Based Approach”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">IJCNN 2025 (IEEE)</span>
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">2025</span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+
+        <!-- <p class="mt-3 text-xs text-zinc-500">
+          Rome, Italy
+        </p> -->
+      </article>
+
+      <!-- In Review -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-amber-500"></span>
+            <span class="text-zinc-600">In Review</span>
+          </div>
+
+          <span class="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
+            Conference Paper
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          A. Krishna Vajjala, <span class="font-semibold">Dipak Meher</span>, D. Rosenblum
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “Cross-Domain Recommendation Meets Large Language Models”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 border border-amber-200">
+            In Review
+          </span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+      </article>
+
+      <!-- 6) SDM 2024 -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="text-zinc-600">Published</span>
+          </div>
+
+          <span
+            class="rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
+            Conference Paper
+          </span>
+        </div>
+
+        <p class="mt-4 text-sm text-zinc-700">
+          A. Krishna Vajjala, <span class="font-semibold">Dipak Meher</span>, S. Pothagoni, Z. Zhu, D. Rosenblum
+        </p>
+
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-zinc-900">
+          “Vietoris-Rips Complex: A New Direction for Cross-Domain Cold-Start Recommendation”
+        </h3>
+
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">SDM 2024 (SIAM)</span>
+          <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">2024</span>
+          <a href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+            <span class="text-zinc-600">📄</span> PDF
+          </a>
+        </div>
+
+        <!-- <p class="mt-3 text-xs text-zinc-500">
+          Houston, USA
+        </p> -->
+      </article>
+    </div>
+  </section>
+  <!-- End Publication -->
+
+  <!-- Work Experience -->
+  <section id="work" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Work Experience</h2>
+        <!-- <p class="mt-2 text-sm text-zinc-600">
+          Industry experience in enterprise apps, custom controls, and agile delivery
+        </p> -->
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-10">
+      <!-- TCS -->
+      <article class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-4 top-0 hidden h-full w-px bg-zinc-200 md:block"></div>
+
+        <div class="grid gap-6 md:grid-cols-[2.2rem_1fr]">
+          <!-- Timeline dot -->
+          <div class="hidden md:flex items-start justify-center">
+            <div class="mt-2 h-3 w-3 rounded-full bg-zinc-900 ring-4 ring-white"></div>
+          </div>
+
+          <div class="rounded-3xl border border-zinc-200 bg-white shadow-sm">
+            <div class="p-6 md:p-7">
+              <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 class="text-lg font-semibold">Systems Engineer, Tata Consultancy Services (TCS)</h3>
+                  <!-- <p class="mt-1 text-sm text-zinc-600">PowerApps / PCF Developer · US-based client project</p> -->
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-1">
+                  <span
+                    class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                    Nov 2020 – Jul 2022
+                  </span>
+                  <span class="text-xs text-zinc-500">Mumbai, India</span>
+                </div>
+              </div>
+
+              <div class="mt-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+                <ul class="space-y-2 text-sm text-zinc-700">
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Worked on a US-based client project on PowerApps, developing UI screens, custom controls, and
+                      critical functionalities.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Overcame limitations of built-in PowerApps controls by building custom controls using TypeScript
+                      in PCF.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Analyzed client data and key parameters (including data types) to develop compatible custom
+                      solutions.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Led a team of <span class="font-semibold">4</span> to deliver the product’s critical features on
+                      time.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Executed a POC in PowerApps using an AI Text Recognition model to automate form filling.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Followed Microsoft-recommended coding standards for components and PCF controls; reduced execution
+                      time and improved application performance by <span class="font-semibold">10%</span>.
+                    </span>
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                    <span class="min-w-0 leading-relaxed">
+                      Followed the Scaled Agile Framework (SAFe) and used Azure DevOps to track sprint progress.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech chips -->
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">PowerApps</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">PCF</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">TypeScript</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Power
+                  Automate</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Azure
+                  DevOps</span>
+                <span
+                  class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">SAFe
+                  Agile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- End Work Experience -->
+
+  <!-- PROJECTS -->
+  <div class="w-full max-w-none col-span-full">
+    <section id="projects" class="w-full py-14">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Academic Projects</h2>
+            <p class="mt-2 text-sm text-zinc-600">
+              Selected coursework projects across NLP and Data Mining
+            </p>
+          </div>
+        </div>
+
+        <!-- Stacked list -->
+        <div class="mt-10 grid gap-6">
+          <!-- Project 1 -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+              <div class="min-w-0">
+                <h3 class="text-lg md:text-xl font-semibold text-zinc-900">
+                  LLM Post-Training for Multilingual Reasoning
+                </h3>
+
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">NLP</span>
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">Multilingual</span>
+                  <span
+                    class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">Post-training</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-start md:items-end gap-2">
+                <span
+                  class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                  Aug 2025 – Dec 2025
+                </span>
+                <div class="flex flex-wrap gap-2">
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">🔗</span> Repo
+                  </a>
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">📄</span> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+              <ul class="space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Studied multilingual reasoning failures caused by implicit translation drift across five
+                    languages on the BBQ benchmark.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Built a translation-aided post-training framework using SFT and GRPO on synthetic translated
+                    data without labels.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Improved compute-normalized multilingual accuracy and analyzed translation fidelity using COMET.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+              <div class="min-w-0">
+                <h3 class="text-lg md:text-xl font-semibold text-zinc-900">
+                  Multilingual Text Classification using BERT
+                </h3>
+
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">NLP</span>
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">BERT</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-start md:items-end gap-2">
+                <span
+                  class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                  Sept 2023 – Oct 2023
+                </span>
+                <div class="flex flex-wrap gap-2">
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">🔗</span> Repo
+                  </a>
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">📄</span> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+              <ul class="space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Fine-tuned BERT for multilingual text classification into 15 categories with <span
+                      class="font-semibold">85.1%</span> test accuracy.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Managed data collection, augmentation, and model training/testing on a 12K multilingual dataset.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Achieved <span class="font-semibold">94%</span> accuracy for cross-lingual tests for
+                    multilingual applications.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+              <div class="min-w-0">
+                <h3 class="text-lg md:text-xl font-semibold text-zinc-900">
+                  Sentiment Analysis using Logistic Regression
+                </h3>
+
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">Data
+                    Mining</span>
+                  <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700">Classical
+                    ML</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-start md:items-end gap-2">
+                <span
+                  class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-700">
+                  Jan 2023 – Feb 2023
+                </span>
+                <div class="flex flex-wrap gap-2">
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">🔗</span> Repo
+                  </a>
+                  <a href="#"
+                    class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-900 hover:bg-zinc-50">
+                    <span class="text-zinc-600">📄</span> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+              <ul class="space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Performed sentiment analysis on 20K product reviews with preprocessing, stemming, and stopword
+                    removal.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Evaluated bag-of-words, n-gram, and TF-IDF methods; achieved <span class="font-semibold">87%</span>
+                    accuracy using bi-gram bag-of-words.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Developed and trained the model in Python using NLTK, Scikit-learn, and Pandas for end-to-end
+                    implementation.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EDUCATION (full-width, fixes 1/3 width issue inside parent grids) -->
+  <!-- EDUCATION (full-width, fixes 1/3 width issue inside parent grids) -->
+  <div class="w-full max-w-none col-span-full">
+    <section id="education" class="w-full py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+              Education
+            </h2>
+            <!-- <p class="mt-2 text-sm text-zinc-600">
+            Academic training in Computer Science and Engineering
+          </p> -->
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6">
+          <!-- PhD -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-zinc-900">
+                  PhD in Computer Science
+                </h3>
+                <p class="mt-1 text-sm text-zinc-600">
+                  George Mason University, Fairfax, VA
+                </p>
+              </div>
+
+              <span
+                class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-700">
+                Aug 2024 – Present
+              </span>
+            </div>
+
+            <p class="mt-4 text-sm text-zinc-700 leading-relaxed">
+              Research focus on machine learning, knowledge graphs, large language models,
+              and graph-based retrieval-augmented generation (RAG).
+            </p>
+          </article>
+
+          <!-- MS -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-zinc-900">
+                  MS in Computer Science
+                </h3>
+                <p class="mt-1 text-sm text-zinc-600">
+                  George Mason University, Fairfax, VA
+                </p>
+              </div>
+
+              <span
+                class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-700">
+                Aug 2022 – May 2024
+              </span>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-3 text-sm text-zinc-700">
+              <span class="rounded-full bg-zinc-100 px-3 py-1 font-medium">
+                GPA: 3.96 / 4.0
+              </span>
+              <span class="rounded-full bg-zinc-100 px-3 py-1 font-medium">
+                Distinguished Academic Award
+              </span>
+            </div>
+          </article>
+
+          <!-- BTech -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-zinc-900">
+                  BTech in Computer Science and Engineering
+                </h3>
+                <p class="mt-1 text-sm text-zinc-600">
+                  SGGSIET, Nanded, India
+                </p>
+              </div>
+
+              <span
+                class="inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-700">
+                Aug 2016 – Nov 2020
+              </span>
+            </div>
+
+            <div class="mt-4 text-sm text-zinc-700">
+              <span class="rounded-full bg-zinc-100 px-3 py-1 font-medium">
+                GPA: 8.56 / 10.0
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div id="skills" class="w-full max-w-none col-span-full">
+    <section id="skills" class="w-full py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+              Technical Skills
+            </h2>
+            <p class="mt-2 text-sm text-zinc-600">
+              Programming languages, frameworks, and tools
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <!-- Languages -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <h3 class="text-lg font-semibold text-zinc-900">
+              Programming & Frameworks
+            </h3>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Go</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Spring Boot</span>
+            </div>
+          </article>
+
+          <!-- Tools -->
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6 md:p-7 shadow-sm">
+            <h3 class="text-lg font-semibold text-zinc-900">
+              ML, NLP & Systems Tools
+            </h3>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">TensorFlow</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">Hugging Face</span>
+              <span class="skill-pill">LangChain</span>
+              <span class="skill-pill">SpaCy</span>
+              <span class="skill-pill">Ollama</span>
+              <span class="skill-pill">AWS S3</span>
+              <span class="skill-pill">Docker</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TALKS -->
+  <section id="engagement" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Academic & Community Engagement</h2>
+        <p class="mt-2 text-sm text-zinc-600">
+          Talks, service, leadership, and community contributions
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-6 lg:grid-cols-3">
+      <!-- Invited Talks -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm lg:col-span-2">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-lg font-semibold text-zinc-900">Invited Talks</h3>
+            <p class="mt-1 text-sm text-zinc-600">Selected invited seminars and workshop talks</p>
+          </div>
+          <span class="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-700">
+            Highlights
+          </span>
+        </div>
+
+        <div class="mt-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+          <ul class="space-y-3 text-sm text-zinc-700">
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="font-semibold">Mitigating Temporal Degradation in Entity Linking</span>
+                <span class="text-zinc-500"> — Data Mining Lab, GMU · 2024</span>
+              </span>
+            </li>
+
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="font-semibold">GraphRAG for Query-Focused Summarization</span>
+                <span class="text-zinc-500"> — Data Mining Seminar, GMU · 2024</span>
+              </span>
+            </li>
+
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="font-semibold">Understanding User Behavior in Cross-Domain Recommendation</span>
+                <span class="text-zinc-500"> — IJCNN 2025, Rome, Italy</span>
+              </span>
+            </li>
+
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="font-semibold">Knowledge Graph (KG) Construction with LLMs</span>
+                <span class="text-zinc-500"> — KDD 2025 Workshop (SKnow-LLM), Toronto, Canada</span>
+              </span>
+            </li>
+
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="font-semibold">LINK-KG: Coreference-Resolved KGs for Human Smuggling Networks</span>
+                <span class="text-zinc-500"> — ICKG 2025, Limassol, Cyprus</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Optional action row -->
+        <div class="mt-5 flex flex-wrap items-center gap-2">
+          <span
+            class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Seminars</span>
+          <span
+            class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Workshops</span>
+          <span
+            class="rounded-full bg-white px-3 py-1 text-xs font-medium text-zinc-700 border border-zinc-200">Conferences</span>
+        </div>
+      </article>
+
+      <!-- Mentorship -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-900">Mentorship</h3>
+
+        <div class="mt-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+          <ul class="space-y-3 text-sm">
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+              <span class="min-w-0 leading-relaxed">
+                <span class="block font-semibold text-zinc-900">
+                  Elijah Feldman
+                </span>
+                <span class="block text-zinc-500">
+                  Thomas Jefferson High School for Science and Technology · Research Mentorship
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Leadership & Volunteering -->
+      <article class="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm lg:col-span-3">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <h3 class="text-lg font-semibold text-zinc-900">Leadership & Volunteering</h3>
+            <p class="mt-1 text-sm text-zinc-600">
+              Student leadership, community service, and technical volunteering
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-6">
+          <!-- Bhakti Yoga Club -->
+          <div class="flex gap-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+            <!-- Image placeholder -->
+            <div class="flex-shrink-0">
+              <div class="h-14 w-14 rounded-xl border border-zinc-200 bg-zinc-100 flex items-center justify-center">
+                <svg class="h-6 w-6 text-zinc-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 7h14v10H5zM9 11l3 3 3-3" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex-1">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <p class="font-semibold text-zinc-900">President, Bhakti Yoga Club</p>
+                  <p class="text-sm text-zinc-500">George Mason University</p>
+                </div>
+                <span class="text-xs text-zinc-500">Jan 2023 – Present</span>
+              </div>
+
+              <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Managed official university requirements, including approvals, room bookings, and event
+                    coordination.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Organized and led weekly sessions on Yoga, Meditation, Mindfulness, and Vegetarian lifestyle with a
+                    team of 5.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Oversaw weekly logistics and coordinated food distribution during events for 30 students every week.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- VOICE Club -->
+          <div class="flex gap-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+            <div class="flex-shrink-0">
+              <div class="h-14 w-14 rounded-xl border border-zinc-200 bg-zinc-100 flex items-center justify-center">
+                <svg class="h-6 w-6 text-zinc-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 7h14v10H5zM9 11l3 3 3-3" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex-1">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <p class="font-semibold text-zinc-900">Core Manager, VOICE Club</p>
+                  <p class="text-sm text-zinc-500">
+                    Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded
+                  </p>
+                </div>
+                <span class="text-xs text-zinc-500">Aug 2016 – Aug 2017</span>
+              </div>
+
+              <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Organized student events on Mind Control, Stress Management, and self-development.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Led a team of 5 members, handling responsibilities including crowd management and logistics.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Mentored 10 students through the “Discover Yourself” course inspired by the Bhagavad Gita.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PRAGYAA -->
+          <div class="flex gap-5 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
+            <div class="flex-shrink-0">
+              <div class="h-14 w-14 rounded-xl border border-zinc-200 bg-zinc-100 flex items-center justify-center">
+                <svg class="h-6 w-6 text-zinc-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 7h14v10H5zM9 11l3 3 3-3" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex-1">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <p class="font-semibold text-zinc-900">Web Developer, PRAGYAA 2016</p>
+                  <p class="text-sm text-zinc-500">
+                    Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded
+                  </p>
+                </div>
+                <span class="text-xs text-zinc-500">Aug 2016 – Mar 2017</span>
+              </div>
+
+              <ul class="mt-3 space-y-2 text-sm text-zinc-700">
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Member of the web design team for a national-level technical fest.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Designed and developed the event website and Android application with a team of 10 students.
+                  </span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-zinc-400"></span>
+                  <span class="min-w-0 leading-relaxed">
+                    Maintained the website and application during peak event hours.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+  </section>
+
+  <!-- CONTACT (tight spacing, sequential) -->
+  <div class="w-full max-w-none col-span-full">
+    <section id="contact" class="w-full pt-8 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-zinc-200 bg-white p-8 md:p-10 shadow-sm">
+          <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+              Contact
+            </h2>
+
+            <p class="text-sm md:text-base text-zinc-600">
+              Feel free to reach out for research collaboration, internships, or academic discussions.
+            </p>
+
+            <div class="mt-2 flex flex-col sm:flex-row items-center gap-3 text-sm text-zinc-700">
+              <a href="mailto:dipakmeher51@gmail.com"
+                class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 hover:bg-zinc-100">
+                📧 <span class="font-medium">dipakmeher51[at]gmail[dot]com</span>
+              </a>
+
+              <!-- <span class="text-zinc-400 hidden sm:inline">·</span> -->
+
+              <!-- <span class="text-zinc-600">
+                    📍 Fairfax, VA, USA
+                  </span> -->
+            </div>
+
+            <div class="mt-4 flex flex-wrap justify-center gap-3 text-sm">
+              <a href="https://www.linkedin.com/in/dipakmeher/"
+                class="flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 hover:bg-zinc-50">
+                <!-- LinkedIn icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-zinc-600" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M4.98 3.5c0 1.38-1.11 2.5-2.48 2.5A2.49 2.49 0 0 1 0 3.5C0 2.12 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM.2 24V7.8h4.6V24H.2zm7.8-16.2h4.4v2.2h.1c.6-1.1 2.1-2.3 4.4-2.3 4.7 0 5.6 3.1 5.6 7.1V24h-4.6v-7.9c0-1.9 0-4.4-2.7-4.4s-3.1 2.1-3.1 4.2V24H8V7.8z" />
+                </svg>
+                LinkedIn
+              </a>
+
+              <a href="https://scholar.google.com/citations?user=jWSz_LvtslcC&hl=en"
+                class="flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 hover:bg-zinc-50">
+                <!-- GitHub icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-zinc-600" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.6-2.82 5.62-5.5 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z" />
+                </svg>
+                GitHub
+              </a>
+
+              <a href="https://github.com/dipakmeher"
+                class="flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 hover:bg-zinc-50">
+                <!-- Google Scholar icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-zinc-600" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.5L5.5 12 12 8.5l6.5 3.5L12 16.5z" />
+                </svg>
+                Scholar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <footer class="w-full max-w-none col-span-full border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-xs text-zinc-500">
+      © Dipak Meher · Academic Portfolio
+    </div>
+  </footer>
+
+</body>
+
+</html>
